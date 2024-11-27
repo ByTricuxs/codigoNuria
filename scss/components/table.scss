@@ -1,0 +1,61 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables' as v;
+
+.players{
+    padding: 1rem;
+}
+
+.players-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem;
+
+    
+    th, td {
+        padding: 1rem;
+        text-align: left;
+        border: 1px solid v.$lightColor;
+    }
+    
+    th {
+        background-color: v.$decorationColor;
+        color: v.$lightColor;
+        font-family: v.$titleFont;
+        font-size: 1.25rem;
+        letter-spacing: 0.25rem;
+    }
+    
+    td {
+        background-color: v.$darkColor;
+        color: v.$lightColor;
+        font-family: v.$bodyFont;
+        font-size: 1rem;
+    }
+
+    tr:nth-child(even) {
+        background-color: v.$meduimColor;
+    }
+
+    tr:hover {
+        background-color: v.$decorationColor;
+        cursor: pointer;
+    }
+
+    @include mixins.telefono {
+        th, td {
+            padding: 0.75rem; // 12px
+        }
+    }
+
+    @include mixins.tablet {
+        th, td {
+            padding: 1rem;
+        }
+    }
+
+    @include mixins.desktop {
+        th, td {
+            padding: 1.5rem;
+        }
+    }
+}

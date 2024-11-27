@@ -1,0 +1,37 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+// Body styles
+body {
+    background: variables.$darkColor;
+    color: variables.$lightColor;
+    font-family: variables.$bodyFont;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 0;
+}
+
+nav {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: variables.$lightColor;
+        padding: 0.25rem; // 4px
+        margin: 0.3125rem; // 5px
+        border-radius: 0.625rem; // 10px
+        display: flex;
+        justify-content: center;
+        border: 1px solid variables.$meduimColor;
+        transition: background-color 0.3s;
+    }
+    a:hover{
+        color: variables.$decorationColor;
+        background-color: variables.$meduimColor;
+    }
+}

@@ -1,0 +1,345 @@
+body {
+  background: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 0;
+}
+
+nav {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  padding: 0.25rem;
+  margin: 0.3125rem;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid hsl(0, 0%, 74%);
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  color: hsl(233, 57%, 18%);
+  background-color: hsl(0, 0%, 74%);
+}
+
+.players {
+  padding: 1rem;
+}
+
+.players-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem;
+}
+.players-table th, .players-table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.players-table th {
+  background-color: hsl(233, 57%, 18%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+}
+.players-table td {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+.players-table tr:nth-child(even) {
+  background-color: hsl(0, 0%, 74%);
+}
+.players-table tr:hover {
+  background-color: hsl(233, 57%, 18%);
+  cursor: pointer;
+}
+@media (min-width: 30rem) {
+  .players-table th, .players-table td {
+    padding: 0.75rem;
+  }
+}
+@media (min-width: 48rem) {
+  .players-table th, .players-table td {
+    padding: 1rem;
+  }
+}
+@media (min-width: 75rem) {
+  .players-table th, .players-table td {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 30rem) {
+  nav {
+    display: flex;
+  }
+  nav a {
+    padding: 0.3125rem;
+    margin: 0.625rem;
+  }
+}
+@media (min-width: 48rem) {
+  nav {
+    display: flex;
+  }
+  nav a {
+    padding: 0.9375rem;
+    margin: 0.625rem;
+  }
+}
+h1 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 3.125rem;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 0.3125rem;
+  margin: 0;
+}
+
+.section, .items,
+.enemies {
+  height: auto;
+  background-size: cover;
+  padding: 6.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+  justify-items: center;
+}
+.section div, .items div,
+.enemies div {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.75rem hsla(0, 0%, 0%, 0.1);
+  width: 12rem;
+  height: auto;
+}
+.section img, .items img,
+.enemies img {
+  width: 10.75rem;
+  height: 10.75rem;
+  background-color: hsl(0, 0%, 74%);
+  border-radius: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.home,
+.login-page,
+.signup-page {
+  background-image: url(../img/landing/background1.png) !important;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+}
+
+.tableScores {
+  height: auto !important;
+}
+
+.items {
+  background-image: url(../img/landing/background2.png) !important;
+}
+
+.enemies {
+  background-image: url(../img/landing/background3.png) !important;
+}
+
+.logo {
+  display: flex;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+  height: 7.8125rem;
+}
+@media (min-width: 30rem) {
+  .logo {
+    height: 12.5rem;
+  }
+}
+@media (min-width: 48rem) {
+  .logo {
+    height: 18.75rem;
+  }
+}
+
+.history {
+  padding: 11.75rem 8.75rem 13.25rem;
+  display: grid;
+  place-content: center;
+}
+.history p {
+  text-align: center;
+  padding: 0 1.5625rem;
+  margin: 3.4375rem;
+}
+.history a {
+  grid-column: 1/2;
+  text-align: center;
+}
+.history img {
+  max-width: 22rem;
+  margin: 0 auto;
+  grid-column: 1/2;
+}
+@media (min-width: 30rem) {
+  .history img {
+    max-width: 30rem;
+  }
+}
+@media (min-width: 48rem) {
+  .history img {
+    max-width: 37rem;
+  }
+}
+@media (min-width: 30rem) {
+  .history {
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .history a {
+    grid-column: 2;
+  }
+  .history p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.logo-login {
+  height: 6.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.login-container,
+.signup-container {
+  background-color: hsl(233, 57%, 18%);
+  padding: 2.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.75rem hsla(0, 0%, 0%, 0.2);
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  width: 100%;
+}
+.login-form h2,
+.signup-form h2 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.75rem;
+  text-align: center;
+}
+.login-form label,
+.signup-form label {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+.login-form input,
+.signup-form input {
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  border: none;
+}
+
+.login-footer,
+.signup-footer {
+  margin-top: 0.9375rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.login-footer a,
+.signup-footer a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+}
+
+.btnPage {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.25rem;
+  border: 1px solid hsl(233, 57%, 18%);
+  border-radius: 0.3125rem;
+  padding: 0.625rem;
+  margin: 1.875rem auto;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+.btnPage:hover {
+  background-color: hsl(0, 0%, 74%);
+}
+
+.menu-options a,
+.instructions a,
+.gameOver a,
+.victory a, .history a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.25rem;
+  height: 2.75rem;
+}
+
+footer {
+  background-color: hsl(233, 57%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.25rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  bottom: 0;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+footer .footer-links a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: bold;
+}
+footer .footer-links a:hover {
+  color: hsl(0, 0%, 74%);
+}
+footer .footer-copyright {
+  margin-top: 0.625rem;
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 74%);
+}
+
+/*# sourceMappingURL=style.css.map */

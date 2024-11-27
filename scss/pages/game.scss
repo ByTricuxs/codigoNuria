@@ -1,0 +1,90 @@
+@use '../abstracts/variables';
+@use '../abstracts/typography';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 1;
+}
+
+#hud {
+  position: absolute;
+  top: 20px; 
+  left: 20px;
+  z-index: 10; 
+  padding: 10px;
+  background-color: variables.$meduimColor;
+  border-radius: 30px;
+  
+}
+
+ #hudButton{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: variables.$meduimColor;
+  border: none;
+  border-radius: 20px;
+  font-size: 35px;
+  font-family: variables.$titleFont;
+  cursor: pointer;
+  padding: 10px 20px;
+  z-index: 30;
+}
+
+#livesText, #coinsText {
+  font-size: 32px;
+  font-family: variables.$titleFont;
+  margin: 0;
+}
+
+#orientationMessage,
+#pauseMessage,
+#victoryMessage {
+  position: fixed; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background-color: variables.$darkColorOpacity; 
+  color: variables.$lightColor; 
+  font-size: 2rem; 
+  font-family: variables.$titleFont; 
+  padding: 1000px; 
+  z-index: 20; 
+  display: none;
+  text-align: center;
+}
+
+#orientationMessage.visible,
+#pauseMessage.visible,
+#victoryMessage.visible {
+  display: block;
+}
+
+#orientationMessage p,
+#pauseMessage p,
+#victoryMessage p {
+  height: 100px;
+  width: 400px;
+  text-align: center;
+}

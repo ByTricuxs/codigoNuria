@@ -1,0 +1,91 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.logo-login {
+  height: 6.25rem; // 100px
+  margin-bottom: 1.25rem; // 20px
+}
+
+.login-container,
+.signup-container {
+  background-color: variables.$decorationColor;
+  padding: 2.5rem; // 40px
+  border-radius: 0.625rem; // 10px
+  @include mixins.box-shadow();
+  text-align: center;
+  color: variables.$lightColor;
+  width: 18.75rem; // 300px
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem; // 15px
+  width: 100%;
+
+  h2 {
+    font-family: variables.$titleFont;
+    font-size: 1.75rem; // 28px
+    text-align: center;
+  }
+
+  label {
+    text-align: left;
+    font-family: variables.$bodyFont;
+    width: 100%;
+  }
+
+  input {
+    padding: 0.625rem; // 10px
+    border-radius: 0.3125rem; // 5px
+    border: none;
+  }
+}
+
+.login-footer,
+.signup-footer {
+  margin-top: 0.9375rem; // 15px
+  font-size: 0.875rem; // 14px
+  text-align: center;
+
+  a {
+    color: variables.$lightColor;
+    text-decoration: underline;
+  }
+}
+
+.btnPage {
+    
+  background-color: variables.$lightColor;
+  color: variables.$darkColor;
+  font-family: variables.$titleFont;
+  font-size: 1.25rem; // 16px
+  border: 1px solid variables.$decorationColor;
+  border-radius: 0.3125rem; // 5px
+  padding: 0.625rem; // 10px
+  margin: 1.875rem auto; // 30px
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  &:hover {
+    background-color: variables.$meduimColor;
+  }
+}
+
+.menu-options,
+.instructions,
+.gameOver,
+.victory, .history {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.25rem;
+    height: 2.75rem;
+  }
+}

@@ -1,0 +1,46 @@
+.history {
+  padding: 11.75rem 8.75rem 13.25rem;
+  display: grid;
+  place-content: center;
+}
+.history p {
+  text-align: center;
+  padding: 0 1.5625rem;
+  margin: 3.4375rem;
+}
+.history a {
+  grid-column: 1/2;
+  text-align: center;
+}
+.history img {
+  max-width: 22rem;
+  margin: 0 auto;
+  grid-column: 1/2;
+}
+@media (min-width: 30rem) {
+  .history img {
+    max-width: 30rem;
+  }
+}
+@media (min-width: 48rem) {
+  .history img {
+    max-width: 37rem;
+  }
+}
+@media (min-width: 30rem) {
+  .history {
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .history a {
+    grid-column: 2;
+  }
+  .history p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=history.css.map */
