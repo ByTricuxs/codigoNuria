@@ -5,9 +5,9 @@ export default class Background {
   }
 
   preload() {
-    //this.scene.load.image("background1", "./img/sources/background/background_1.png");
+    this.scene.load.image("background1", "./img/sources/background/background_1.png");
     this.scene.load.image("background2", "./img/sources/background/background_2.png");
-    //this.scene.load.image("background3", "./img/sources/background/background_3.png");
+    this.scene.load.image("background3", "./img/sources/background/background_3.png");
     this.scene.load.image("layer3", "./img/sources/background/layer_3.png");
     this.scene.load.image("layer2", "./img/sources/background/layer_2.png");
     this.scene.load.image("layer1", "./img/sources/background/layer_1.png");
@@ -23,10 +23,10 @@ export default class Background {
   
       switch (index) {
         case 0: 
-          scrollFactor = 0.1; 
+          scrollFactor = 0.2; 
           break;
         case 1: 
-          scrollFactor = 0.1; 
+          scrollFactor = 0.6; 
           break;
         case 2: 
           scrollFactor = 0.1; 

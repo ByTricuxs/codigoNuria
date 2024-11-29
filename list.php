@@ -15,7 +15,6 @@
 <body>
     <a href="./index.php">Add user</a> 
     <p>Hi <?php echo "<strong>".$_SESSION["username"]."</strong>"; ?></p> 
-    <a href="./logout.php">Logout</a> 
     <h1>Registered Users</h1>
     <table border="1">
         <tr>

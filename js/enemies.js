@@ -99,7 +99,7 @@ export default class Enemies {
   updateLivesText(scene) {
     const livesTextElement = document.getElementById("livesText");
     if (livesTextElement) {
-      livesTextElement.textContent = `Vidas: ${this.scene.lives}`;
+      livesTextElement.textContent = `Lives: ${this.scene.lives}`;
     }
   }
 

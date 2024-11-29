@@ -73,7 +73,7 @@
   background-color: hsl(0, 0%, 74%);
 }
 
-.menu-options a,
+.home a, .menu-options a,
 .instructions a,
 .gameOver a,
 .victory a, .history a {

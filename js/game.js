@@ -63,6 +63,7 @@ class GameScene extends Phaser.Scene {
     });
 
     this.isLevelComplete = false;
+    
     const orientation =
       screen.orientation || screen.mozOrientation || screen.msOrientation;
     if (orientation.type.includes("portrait")) {const orientationMessage = document.getElementById("orientationMessage");

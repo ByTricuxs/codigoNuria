@@ -57,7 +57,7 @@ $updatedPlayers = $database->select("tb_players", [
 <div class="home tableScores">
         <header class="header">
             <nav class="registerAndLogin">
-                <a class="btnNav" href="./index.html">Home</a>
+            <a class ="btnNav" href="./index.html">Home</a>
             </nav>
         </header>
         <img class="logo" src="./img/landing/title.png" alt="logo" />
@@ -81,6 +81,7 @@ $updatedPlayers = $database->select("tb_players", [
                 }
             ?>
         </table>
+        <a class="btnPage" href="menuGame.html">Back to menu</a>
       </div>
     </div>
     <footer>

@@ -72,16 +72,17 @@ export default class Gifts {
   updateLivesText(scene) {
     const livesTextElement = document.getElementById("livesText");
     if (livesTextElement) {
-      livesTextElement.textContent = `Vidas: ${this.scene.lives}`;
+      livesTextElement.textContent = `Lives: ${this.scene.lives}`;
     }
   }
 
   updateCoinsText(scene) {
     const coinsTextElement = document.getElementById("coinsText");
     if (coinsTextElement) {
-      coinsTextElement.textContent = `Monedas: ${this.scene.coinsCount}`;
+      coinsTextElement.textContent = `Coins: ${this.scene.coinsCount}`;
     }
   }
+  
   showVictoryMessage(player) {
     const victoryMessage = document.getElementById("victoryMessage");
     victoryMessage.classList.remove("hidden");
